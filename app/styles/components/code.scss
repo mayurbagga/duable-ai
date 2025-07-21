@@ -1,0 +1,9 @@
+.actions .shiki {
+  background-color: var(--cosmiq-elements-actions-code-background) !important;
+}
+
+.shiki {
+  &:not(:has(.actions), .actions *) {
+    background-color: var(--cosmiq-elements-messages-code-background) !important;
+  }
+}

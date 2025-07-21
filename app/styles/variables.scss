@@ -1,0 +1,267 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --cosmiq-elements-borderColor: theme('colors.alpha.gray.10');
+  --cosmiq-elements-borderColorActive: theme('colors.accent.600');
+
+  --cosmiq-elements-bg-depth-1: theme('colors.white');
+  --cosmiq-elements-bg-depth-2: theme('colors.gray.50');
+  --cosmiq-elements-bg-depth-3: theme('colors.gray.200');
+  --cosmiq-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --cosmiq-elements-textPrimary: theme('colors.gray.950');
+  --cosmiq-elements-textSecondary: theme('colors.gray.600');
+  --cosmiq-elements-textTertiary: theme('colors.gray.500');
+
+  --cosmiq-elements-code-background: theme('colors.gray.100');
+  --cosmiq-elements-code-text: theme('colors.gray.950');
+
+  --cosmiq-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --cosmiq-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --cosmiq-elements-button-primary-text: theme('colors.accent.500');
+
+  --cosmiq-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --cosmiq-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --cosmiq-elements-button-secondary-text: theme('colors.gray.950');
+
+  --cosmiq-elements-button-danger-background: theme('colors.alpha.red.10');
+  --cosmiq-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --cosmiq-elements-button-danger-text: theme('colors.red.500');
+
+  --cosmiq-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --cosmiq-elements-item-contentActive: theme('colors.gray.950');
+  --cosmiq-elements-item-contentAccent: theme('colors.accent.700');
+  --cosmiq-elements-item-contentDanger: theme('colors.red.500');
+  --cosmiq-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --cosmiq-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --cosmiq-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --cosmiq-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --cosmiq-elements-loader-background: theme('colors.alpha.gray.10');
+  --cosmiq-elements-loader-progress: theme('colors.accent.500');
+
+  --cosmiq-elements-artifacts-background: theme('colors.white');
+  --cosmiq-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --cosmiq-elements-artifacts-borderColor: var(--cosmiq-elements-borderColor);
+  --cosmiq-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --cosmiq-elements-artifacts-inlineCode-text: var(--cosmiq-elements-textPrimary);
+
+  --cosmiq-elements-actions-background: theme('colors.white');
+  --cosmiq-elements-actions-code-background: theme('colors.gray.800');
+
+  --cosmiq-elements-messages-background: theme('colors.gray.100');
+  --cosmiq-elements-messages-linkColor: theme('colors.accent.500');
+  --cosmiq-elements-messages-code-background: theme('colors.gray.800');
+  --cosmiq-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --cosmiq-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --cosmiq-elements-icon-success: theme('colors.green.500');
+  --cosmiq-elements-icon-error: theme('colors.red.500');
+  --cosmiq-elements-icon-primary: theme('colors.gray.950');
+  --cosmiq-elements-icon-secondary: theme('colors.gray.600');
+  --cosmiq-elements-icon-tertiary: theme('colors.gray.500');
+
+  --cosmiq-elements-dividerColor: theme('colors.gray.100');
+
+  --cosmiq-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --cosmiq-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --cosmiq-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --cosmiq-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --cosmiq-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --cosmiq-elements-preview-addressBar-background: theme('colors.gray.100');
+  --cosmiq-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --cosmiq-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --cosmiq-elements-preview-addressBar-text: var(--cosmiq-elements-textSecondary);
+  --cosmiq-elements-preview-addressBar-textActive: var(--cosmiq-elements-textPrimary);
+
+  --cosmiq-elements-terminals-background: theme('colors.white');
+  --cosmiq-elements-terminals-buttonBackground: var(--cosmiq-elements-bg-depth-4);
+
+  --cosmiq-elements-cta-background: theme('colors.gray.100');
+  --cosmiq-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --cosmiq-terminal-background: var(--cosmiq-elements-terminals-background);
+  --cosmiq-terminal-foreground: #333333;
+  --cosmiq-terminal-selection-background: #00000040;
+  --cosmiq-terminal-black: #000000;
+  --cosmiq-terminal-red: #cd3131;
+  --cosmiq-terminal-green: #00bc00;
+  --cosmiq-terminal-yellow: #949800;
+  --cosmiq-terminal-blue: #0451a5;
+  --cosmiq-terminal-magenta: #bc05bc;
+  --cosmiq-terminal-cyan: #0598bc;
+  --cosmiq-terminal-white: #555555;
+  --cosmiq-terminal-brightBlack: #686868;
+  --cosmiq-terminal-brightRed: #cd3131;
+  --cosmiq-terminal-brightGreen: #00bc00;
+  --cosmiq-terminal-brightYellow: #949800;
+  --cosmiq-terminal-brightBlue: #0451a5;
+  --cosmiq-terminal-brightMagenta: #bc05bc;
+  --cosmiq-terminal-brightCyan: #0598bc;
+  --cosmiq-terminal-brightWhite: #a5a5a5;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example light theme color
+  --modern-scrollbar-thumb-backgroundHover: rgba(74, 74, 74, 0.8);
+
+
+  --primary: theme('colors.blue.600');
+  
+  --accent: #F97316;
+  --dark: #101827;
+  --light: #F3F4F6;
+  --error: #EF4444;
+  --success: #10B981;
+  --white: #FFFFFF;
+
+
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --cosmiq-elements-borderColor: theme('colors.alpha.white.10');
+  --cosmiq-elements-borderColorActive: theme('colors.accent.500');
+
+  --cosmiq-elements-bg-depth-1: theme('colors.gray.950');
+  --cosmiq-elements-bg-depth-2: theme('colors.gray.900');
+  --cosmiq-elements-bg-depth-3: theme('colors.gray.800');
+  --cosmiq-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --cosmiq-elements-textPrimary: theme('colors.white');
+  --cosmiq-elements-textSecondary: theme('colors.gray.400');
+  --cosmiq-elements-textTertiary: theme('colors.gray.500');
+
+  --cosmiq-elements-code-background: theme('colors.gray.800');
+  --cosmiq-elements-code-text: theme('colors.white');
+
+  --cosmiq-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --cosmiq-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --cosmiq-elements-button-primary-text: theme('colors.accent.500');
+
+  --cosmiq-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --cosmiq-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --cosmiq-elements-button-secondary-text: theme('colors.white');
+
+  --cosmiq-elements-button-danger-background: theme('colors.alpha.red.10');
+  --cosmiq-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --cosmiq-elements-button-danger-text: theme('colors.red.500');
+
+  --cosmiq-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --cosmiq-elements-item-contentActive: theme('colors.white');
+  --cosmiq-elements-item-contentAccent: theme('colors.accent.500');
+  --cosmiq-elements-item-contentDanger: theme('colors.red.500');
+  --cosmiq-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --cosmiq-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --cosmiq-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --cosmiq-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --cosmiq-elements-loader-background: theme('colors.alpha.gray.10');
+  --cosmiq-elements-loader-progress: theme('colors.accent.500');
+
+  --cosmiq-elements-artifacts-background: theme('colors.gray.900');
+  --cosmiq-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --cosmiq-elements-artifacts-borderColor: var(--cosmiq-elements-borderColor);
+  --cosmiq-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --cosmiq-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --cosmiq-elements-actions-background: theme('colors.gray.900');
+  --cosmiq-elements-actions-code-background: theme('colors.gray.800');
+
+  --cosmiq-elements-messages-background: theme('colors.gray.800');
+  --cosmiq-elements-messages-linkColor: theme('colors.accent.500');
+  --cosmiq-elements-messages-code-background: theme('colors.gray.900');
+  --cosmiq-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --cosmiq-elements-messages-inlineCode-text: var(--cosmiq-elements-textPrimary);
+
+  --cosmiq-elements-icon-success: theme('colors.green.400');
+  --cosmiq-elements-icon-error: theme('colors.red.400');
+  --cosmiq-elements-icon-primary: theme('colors.gray.950');
+  --cosmiq-elements-icon-secondary: theme('colors.gray.600');
+  --cosmiq-elements-icon-tertiary: theme('colors.gray.500');
+
+  --cosmiq-elements-dividerColor: theme('colors.gray.100');
+
+  --cosmiq-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --cosmiq-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --cosmiq-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --cosmiq-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --cosmiq-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --cosmiq-elements-preview-addressBar-background: var(--cosmiq-elements-bg-depth-1);
+  --cosmiq-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --cosmiq-elements-preview-addressBar-backgroundActive: var(--cosmiq-elements-bg-depth-1);
+  --cosmiq-elements-preview-addressBar-text: var(--cosmiq-elements-textSecondary);
+  --cosmiq-elements-preview-addressBar-textActive: var(--cosmiq-elements-textPrimary);
+
+  --cosmiq-elements-terminals-background: var(--cosmiq-elements-bg-depth-1);
+  --cosmiq-elements-terminals-buttonBackground: var(--cosmiq-elements-bg-depth-3);
+
+  --cosmiq-elements-cta-background: theme('colors.alpha.white.10');
+  --cosmiq-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --cosmiq-terminal-background: var(--cosmiq-elements-terminals-background);
+  --cosmiq-terminal-foreground: #eff0eb;
+  --cosmiq-terminal-selection-background: #97979b33;
+  --cosmiq-terminal-black: #000000;
+  --cosmiq-terminal-red: #ff5c57;
+  --cosmiq-terminal-green: #5af78e;
+  --cosmiq-terminal-yellow: #f3f99d;
+  --cosmiq-terminal-blue: #57c7ff;
+  --cosmiq-terminal-magenta: #ff6ac1;
+  --cosmiq-terminal-cyan: #9aedfe;
+  --cosmiq-terminal-white: #f1f1f0;
+  --cosmiq-terminal-brightBlack: #686868;
+  --cosmiq-terminal-brightRed: #ff5c57;
+  --cosmiq-terminal-brightGreen: #5af78e;
+  --cosmiq-terminal-brightYellow: #f3f99d;
+  --cosmiq-terminal-brightBlue: #57c7ff;
+  --cosmiq-terminal-brightMagenta: #ff6ac1;
+  --cosmiq-terminal-brightCyan: #9aedfe;
+  --cosmiq-terminal-brightWhite: #f1f1f0;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example dark theme color (adjust as needed)
+  --modern-scrollbar-thumb-backgroundHover: rgba(10, 10, 10, 0.8);
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 33rem;
+  --chat-min-width: 533px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 2536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--cosmiq-elements-icon-success);
+  --toastify-color-progress-error: var(--cosmiq-elements-icon-error);
+
+  /* Terminal */
+  --cosmiq-elements-terminal-backgroundColor: var(--cosmiq-terminal-background);
+  --cosmiq-elements-terminal-textColor: var(--cosmiq-terminal-foreground);
+  --cosmiq-elements-terminal-cursorColor: var(--cosmiq-terminal-foreground);
+  --cosmiq-elements-terminal-selection-backgroundColor: var(--cosmiq-terminal-selection-background);
+  --cosmiq-elements-terminal-color-black: var(--cosmiq-terminal-black);
+  --cosmiq-elements-terminal-color-red: var(--cosmiq-terminal-red);
+  --cosmiq-elements-terminal-color-green: var(--cosmiq-terminal-green);
+  --cosmiq-elements-terminal-color-yellow: var(--cosmiq-terminal-yellow);
+  --cosmiq-elements-terminal-color-blue: var(--cosmiq-terminal-blue);
+  --cosmiq-elements-terminal-color-magenta: var(--cosmiq-terminal-magenta);
+  --cosmiq-elements-terminal-color-cyan: var(--cosmiq-terminal-cyan);
+  --cosmiq-elements-terminal-color-white: var(--cosmiq-terminal-white);
+  --cosmiq-elements-terminal-color-brightBlack: var(--cosmiq-terminal-brightBlack);
+  --cosmiq-elements-terminal-color-brightRed: var(--cosmiq-terminal-brightRed);
+  --cosmiq-elements-terminal-color-brightGreen: var(--cosmiq-terminal-brightGreen);
+  --cosmiq-elements-terminal-color-brightYellow: var(--cosmiq-terminal-brightYellow);
+  --cosmiq-elements-terminal-color-brightBlue: var(--cosmiq-terminal-brightBlue);
+  --cosmiq-elements-terminal-color-brightMagenta: var(--cosmiq-terminal-brightMagenta);
+  --cosmiq-elements-terminal-color-brightCyan: var(--cosmiq-terminal-brightCyan);
+  --cosmiq-elements-terminal-color-brightWhite: var(--cosmiq-terminal-brightWhite);
+}
