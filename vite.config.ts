@@ -6,8 +6,6 @@ import { optimizeCssModules } from 'vite-plugin-optimize-css-modules';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import * as dotenv from 'dotenv';
 import { execSync } from 'child_process';
-import { readFileSync } from 'fs';
-import { join } from 'path';
 
 dotenv.config();
 
@@ -43,8 +41,12 @@ const getGitInfo = () => {
 // Read package.json with detailed dependency info
 const getPackageJson = () => {
   try {
-    const pkgPath = join(process.cwd(), 'package.json');
-    const pkg = JSON.parse(readFileSync(pkgPath, 'utf-8'));
+    // eslint-disable-next-line
+    const pathBrowserify = require('path-browserify');
+    // eslint-disable-next-line
+    const fs = require('fs');
+    const pkgPath = pathBrowserify.join(process.cwd(), 'package.json');
+    const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
 
     return {
       name: pkg.name,
@@ -56,6 +58,7 @@ const getPackageJson = () => {
       optionalDependencies: pkg.optionalDependencies || {},
     };
   } catch {
+
     return {
       name: 'duable',
       description: 'A DIY LLM interface',
@@ -172,6 +175,12 @@ export default defineConfig((config) => {
         scss: {
           api: 'modern-compiler',
         },
+      },
+    },
+    resolve: {
+      alias: {
+        'util/types': 'util', // Fix for undici/Node.js polyfill issue
+        'node:util/types': 'util', // Fix for node:util/types import
       },
     },
   };
